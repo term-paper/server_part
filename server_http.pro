@@ -16,17 +16,13 @@ SOURCES += main.cpp \
     server.cpp \
     socketthread.cpp \
     serializedbase.cpp \
-    class_with_info.cpp \
-    model/class_with_info.cpp \
-    model/serializedbase.cpp
+    class_with_info.cpp
 
 HEADERS  += \
     server.h \
     socketthread.h \
     serializedbase.h \
-    class_with_info.h \
-    model/class_with_info.h \
-    model/serializedbase.h
+    class_with_info.h
 
 CONFIG += mobility
 MOBILITY = 
