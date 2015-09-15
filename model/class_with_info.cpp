@@ -1,3 +1,5 @@
+
+
 #include "class_with_info.h"
 #include <QDebug>
 class_with_info::class_with_info()

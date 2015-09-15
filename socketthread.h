@@ -5,7 +5,7 @@
 #include <QTcpSocket>
 #include <QDebug>
 #include <QDateTime>
-#include <class_with_info.h>
+#include "model/class_with_info.h"
 class SocketThread : public QThread
 {
     Q_OBJECT

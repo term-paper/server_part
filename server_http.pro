@@ -11,18 +11,17 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = server_http
 TEMPLATE = app
 
+DEPENDPATH += .
+INCLUDEPATH += .
+include(model/model.pri)
 
 SOURCES += main.cpp \
     server.cpp \
-    socketthread.cpp \
-    serializedbase.cpp \
-    class_with_info.cpp
+    socketthread.cpp
 
 HEADERS  += \
     server.h \
-    socketthread.h \
-    serializedbase.h \
-    class_with_info.h
+    socketthread.h
 
 CONFIG += mobility
 MOBILITY = 

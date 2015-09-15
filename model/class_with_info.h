@@ -2,13 +2,14 @@
 #define CLASS_WITH_INFO_H
 
 #include <QObject>
-#include "model/serializedbase.h"
+#include "serializedbase.h"
 class class_with_info : public SerializedBase
 {
     Q_OBJECT
 public:
     Q_PROPERTY(int id_info READ readInfo WRITE SetInfo)//связывание set/get function с свойством
     Q_PROPERTY(double price READ GetPrice WRITE SetPrice)
+
     class_with_info();
     ~class_with_info();
 
